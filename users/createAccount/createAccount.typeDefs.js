@@ -1,13 +1,13 @@
 import { gql } from "apollo-server";
 
 export default gql `
-    type User {
-        id: String!
+    type Mutation {
+    createAccount(
         firstName: String!
         lastName: String
         username: String!
         email: String!
-        createdAt: String!
-        updatedAt: String!
-    }
-`
+        password: String!
+    ): User
+}
+`;
