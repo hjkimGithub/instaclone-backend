@@ -11,6 +11,7 @@ const resolverFn = async (
         username,
         email,
         password: newPassword,
+        bio
     },
     {loggedInUser, protectResolver}
 ) => {
@@ -27,6 +28,7 @@ const resolverFn = async (
             lastName,
             username,
             email,
+            bio,
             ...(uglyPassword && {password : uglyPassword}),
         },
     });

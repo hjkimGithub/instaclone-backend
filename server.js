@@ -1,12 +1,14 @@
 // import dotenv from "dotenv";
 require("dotenv").config();
 import { ApolloServer } from "apollo-server";
-// import { typeDefs, resolvers } from "./schema";
-import schema from "./schema";
+// import schema from "./schema";
+import {typeDefs, resolvers} from "./schema";
 import { getUser, protectResolver } from "./users/users.utils";
 
 const server = new ApolloServer({
-    schema,
+    // schema,
+    resolvers,
+    typeDefs,
     context: async ({req}) => {
       return {
         loggedInUser: await getUser(req.headers.token),
