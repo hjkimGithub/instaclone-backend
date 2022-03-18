@@ -17,8 +17,10 @@ export default {
                         hashtag
                     },
                 }));
-                console.log(hashtagObj);
+                // console.log(hashtagObj);
             }
+            // save the photo with the parsed hashtags
+            // add the photo to the hashtags
             return client.photo.create({
                 data: {
                     file,
@@ -35,8 +37,6 @@ export default {
                     })),
                 },
             });
-            // save the photo with the parsed hashtags
-            // add the photo to the hashtags
         })
     }
 }
