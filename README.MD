@@ -26,7 +26,7 @@ Search Users
 -- need some customize
 
 ## Photos
-==========================================
+
 Upload Photo (Parse #)
 
 See Photo
@@ -37,6 +37,7 @@ See Hashtags
 
 Search Photos
 
+=============================
 Edit Photo
 
 Like / Unlike Photo

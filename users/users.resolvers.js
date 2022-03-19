@@ -54,5 +54,8 @@ export default {
             // return exists.length !== 0;
             return Boolean(exists);
         },
+        photos: ({id}) => client.user.findUnique({
+            where: id,
+        }).photos(),
     },
 };
