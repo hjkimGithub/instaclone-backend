@@ -29,6 +29,7 @@ export default {
                 photoId: id,
             },
         }),
+        isMine: ({userId}, _, {loggedInUser}) => userId === loggedInUser?.id
     },
     Hashtag: {
         photos: ({id}, {page}, {loggedInUser}) => {
