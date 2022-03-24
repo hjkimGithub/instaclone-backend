@@ -10,7 +10,10 @@ export default {
                 select: {
                     user: true,
                 },
+                // differences between "select" "include": efficiency
+                // cannot use both
             });
+            // console.log(likes);
             return likes.map((like) => like.user);
         },
     },
