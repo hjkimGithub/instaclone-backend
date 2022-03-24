@@ -43,10 +43,23 @@ Like / Unlike Photo
 
 See Photo Likes
 
-=============================
+See Photo Comments
 
 See Feed
 
-Search Photos
+isMine(Delete Photo)
 
-See Hashtags
+================================
+
+## Comments
+
+Comment on Photo
+
+Edit Comment
+
+delete Comment(isMine)
+
+## Image
+
+Upload Image
+
