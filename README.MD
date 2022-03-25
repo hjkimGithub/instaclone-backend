@@ -49,8 +49,6 @@ See Feed
 
 isMine(Delete Photo)
 
-================================
-
 ## Comments
 
 Comment on Photo
