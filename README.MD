@@ -61,3 +61,12 @@ delete Comment(isMine)
 
 Upload Image
 
+## DM
+
+Create Room
+
+Get Room
+
+Send Message
+
+Realtime Message
