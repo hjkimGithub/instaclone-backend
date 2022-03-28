@@ -63,10 +63,8 @@ Upload Image
 
 ## DM
 
-Create Room
-
 Get Room
 
-Send Message
+Send Message(Create Room)
 
 Realtime Message
