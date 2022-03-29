@@ -63,6 +63,8 @@ export default {
                     },
                 },
             });
+            // NEW_MESSAGE: Trigger name
+            // roomUpdates ... : payload
             pubsub.publish(NEW_MESSAGE, { roomUpdates: {...message} });
             return {
                 ok: true,

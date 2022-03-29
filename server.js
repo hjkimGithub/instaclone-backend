@@ -30,6 +30,7 @@ const apollo = new ApolloServer({
       }
     },
     subscriptions: {
+      // connection parameter(headers), right after listening
       onConnect: async ({token}) => {
         if(!token) {
           throw new Error("Not Allowed to listen!!!")
