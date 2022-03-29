@@ -44,26 +44,25 @@ export default {
                         error: "Room not Found!!!"
                     };
                 }
-            } else {
-                await client.message.create({
-                    data: {
-                        payload,
-                        room: {
-                            connect: {
-                                id: room.id,
-                            },
-                        },
-                        user: {
-                            connect: {
-                                id: loggedInUser.id,
-                            },
+            }
+            await client.message.create({
+                data: {
+                    payload,
+                    room: {
+                        connect: {
+                            id: room.id,
                         },
                     },
-                });
-                return {
-                    ok: true,
-                };
-            } 
+                    user: {
+                        connect: {
+                            id: loggedInUser.id,
+                        },
+                    },
+                },
+            });
+            return {
+                ok: true,
+            }; 
         })
     }
 }

@@ -67,4 +67,10 @@ Get Room
 
 Send Message(Create Room)
 
+See Room
+
+Computed Fields
+
+See(Read) Message
+
 Realtime Message
